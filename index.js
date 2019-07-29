@@ -21,19 +21,19 @@ function marked_rating(cell){
 function btn_sel(here){
     if (here.className == "active"){
       clicks += 1;
-      var elements = document.getElementsByClassName("btn");
+      var elements = document.getElementsByClassName("b");
       for (var i = 0; i < elements.length; i++) {
         elements[i].disabled = false;
       }
-      here.className = "btn";
+      here.className = "b";
     }
     else if(clicks > 0){
       clicks -= 1;
-      if(here.className == "btn"){
+      if(here.className == "b"){
         here.className = "active";
       }
     }else{
-      var elements = document.getElementsByClassName("btn");
+      var elements = document.getElementsByClassName("b");
       for (var i = 0; i < elements.length; i++) {
       elements[i].disabled = true;
     }
@@ -42,7 +42,7 @@ function btn_sel(here){
 
 function window_size(here){
   var container = document.getElementsByClassName("container");
-  var container2 = document.getElementsByClassName("page-container");
+  var container2 = document.getElementsByClassName("page");
   if(window.innerWidth < 750){
     console.log("hey");
     container[0].style.width = "450px";
