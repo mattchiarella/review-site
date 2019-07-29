@@ -37,6 +37,19 @@ button:hover{
   background-color: #bbb;
   transition: 0.5s;
 }
+.submit{
+  align-self:center;
+  background-color: #00ca9b;
+  width:100%;
+  font-size: 30px;
+  margin: -5px auto;
+  padding: 0px;
+  height: 70px;
+}
+.submit:hover{
+  background-color: #00ad6b;
+  transition:0.5s;
+}
 .active{
   background-color: #00ca9b;
   color:white;
@@ -117,6 +130,13 @@ div{
   -moz-box-shadow: 0 0 5px #ccc;
   -webkit-box-shadow: 0 0 5px #ccc;
   box-shadow: 0 0 5px #ccc;
+}
+.submit-div{
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .page{
   width: 700px;

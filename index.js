@@ -46,10 +46,12 @@ function window_size(here){
   if(window.innerWidth < 750){
     console.log("hey");
     container[0].style.width = "450px";
+    container[1].style.width = "450px";
     container2[0].style.width = "450px";
   }
   if(window.innerWidth > 750){
     container[0].style.width = "700px";
+    container[1].style.width = "700px";
     container2[0].style.width = "700px";
   }
 }
